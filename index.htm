@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Perfect Perfume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="progress-bar" id="progress-bar"></div>
+        <h1>Find Your Perfect Perfume</h1>
+        <form id="quiz-form">
+            <div class="question" data-question="1">
+                <h2>Question 1: How old are you?</h2>
+                <div class="option" data-value="Under 18">Under 18</div>
+                <div class="option" data-value="18-25">18-25</div>
+                <div class="option" data-value="26-35">26-35</div>
+                <div class="option" data-value="36-45">36-45</div>
+                <div class="option" data-value="46 and above">46 and above</div>
+            </div>
+            <div class="question" data-question="2">
+                <h2>Question 2: What is your gender?</h2>
+                <div class="option" data-value="Male">Male</div>
+                <div class="option" data-value="Female">Female</div>
+                <div class="option" data-value="Other">Other</div>
+            </div>
+            <div class="question" data-question="3">
+                <h2>Question 3: What matters most to you?</h2>
+                <div class="option" data-value="Sports">Sports</div>
+                <div class="option" data-value="Parties">Parties</div>
+                <div class="option" data-value="Family Time">Family Time</div>
+                <div class="option" data-value="Career">Career</div>
+            </div>
+            <div class="question" data-question="4">
+                <h2>Question 4: Which Indian festival do you look forward to the most?</h2>
+                <div class="option" data-value="Diwali">Diwali</div>
+                <div class="option" data-value="Holi">Holi</div>
+                <div class="option" data-value="Navratri">Navratri</div>
+                <div class="option" data-value="Durga Puja">Durga Puja</div>
+            </div>
+            <div class="question" data-question="5">
+                <h2>Question 5: Which Indian dessert do you prefer?</h2>
+                <div class="option" data-value="Gulab Jamun">Gulab Jamun</div>
+                <div class="option" data-value="Rasgulla">Rasgulla</div>
+                <div class="option" data-value="Kaju Katli">Kaju Katli</div>
+                <div class="option" data-value="Jalebi">Jalebi</div>
+            </div>
+            <div class="question" data-question="6">
+                <h2>Question 6: How strong do you want your perfume to be?</h2>
+                <div class="option" data-value="Light">Light</div>
+                <div class="option" data-value="Moderate">Moderate</div>
+                <div class="option" data-value="Strong">Strong</div>
+            </div>
+            <div class="question" data-question="7">
+                <h2>Question 7: What feel do you prefer for your perfume?</h2>
+                <div class="option" data-value="Fresh">Fresh</div>
+                <div class="option" data-value="Warm">Warm</div>
+                <div class="option" data-value="Spicy">Spicy</div>
+                <div class="option" data-value="Woody">Woody</div>
+            </div>
+            <div class="question" data-question="contact">
+                <h2>Please enter your contact details to see your results:</h2>
+                <label>
+                    Name:
+                    <input type="text" name="name" autocomplete="off" required>
+                </label>
+                <label>
+                    Phone Number:
+                    <input type="tel" name="phone" autocomplete="off" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" autocomplete="off" required>
+                </label>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div id="result-container" class="result-container">
+        <h2>Your Custom Perfume Mix</h2>
+        <img id="mix-image" src="mix-image-placeholder.png" alt="Perfume Mix" class="mix-image">
+        <div id="mix-result" class="mix-result"></div>
+        <button id="restart-button">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
